@@ -1,0 +1,16 @@
+{
+  "name": "spiderhead-application",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "normal": "sass style/sass/style.scss:style/css/style.css",
+    "minify": "sass style/sass/style.scss:style/css/style.css --style compressed",
+    "watch": "sass style/sass/style.scss:style/css/style.css --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.57.1"
+  }
+}
