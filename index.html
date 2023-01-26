@@ -6,6 +6,10 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
      <link rel="stylesheet" href="style/css/style.css">
+     
+     <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+     <link href="https://cdn.jsdelivr.net/npm/round-slider@1.6.1/dist/roundslider.min.css" rel="stylesheet" />                      
+     <script src="https://cdn.jsdelivr.net/npm/round-slider@1.6.1/dist/roundslider.min.js"></script>
 
      <title>Spiderhead</title>
 </head>
@@ -13,21 +17,22 @@
      
      <section class="container">
           <main class="range-section">
-               <input type="range" class="range-section range">
-
-               <section class="range-section content">
-                    <p class="dosage">1,5mL/hr</p>
+               <div class="rs-control" id="slider"></div>
+               <section class="range-section__content">
+                    <p class="dosage">mL<span class="times">/hr</span></p>
                     <h1 class="substance">B-15</h1>
                     <p class="ingredient">NDC 56895 - 867 - 21</p>
                     <p class="effects">"Verbaluce"</p>
-                    <p class="lethal">lethal<br>safe</p>
+                    <p class="lethal">lethal<br><span class="result">safe</span></p>
                </section>
 
-               <section class="range-section arrow">
+               <section class="range-section__arrow">
                     <div class="arrow left">
+                         
+                    </div>
+                    <div class="arrow right">
 
                     </div>
-                    <div class="arrow right"></div>
                </section>
           </main>
 
@@ -60,7 +65,7 @@
                <p class="heartbeat">086</p>
                <p>
                     <span>🤍</span>
-                    <span>APU</span>
+                    <span>BPM</span>
                </p>
                <section class="gauge-section">
                     <div class="top">
@@ -78,9 +83,22 @@
           </section>
 
           <section class="prescription">
-               
+
           </section>
      </section>
+
+     <script>
+          $("#slider").roundSlider({
+               radius: 155,
+               circleShape: "pie",
+               startAngle: "315",
+               sliderType: "min-round",
+               max: "100",
+               startValue: 0,
+               width: 30,
+               animation: false
+          });
+     </script>
 
 </body>
 </html>
