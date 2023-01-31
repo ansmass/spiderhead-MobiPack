@@ -17,7 +17,7 @@ body {
 }
 .container .range-section {
   width: 100%;
-  height: 39vh;
+  height: 40vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -149,6 +149,73 @@ body {
   margin: 0 1em;
   font-size: 14px;
   font-weight: 300;
+}
+.container .health-data {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+}
+.container .health-data .bpm-section {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.container .health-data .bpm-section .entitled {
+  width: 90%;
+  height: 20%;
+  font-size: 14px;
+  font-weight: 400;
+  color: #878787;
+}
+.container .health-data .bpm-section .informations {
+  width: 90%;
+  height: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .health-data .bpm-section .informations .heartbeat {
+  font-size: 3.5em;
+  font-weight: 200;
+}
+.container .health-data .bpm-section .informations .icon-bpm {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 14px;
+  font-weight: 400;
+  color: #878787;
+}
+.container .health-data .gauge-section {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .health-data .gauge-section .top,
+.container .health-data .gauge-section .bottom {
+  width: 90%;
+  height: 20%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 400;
+  color: #878787;
+}
+.container .health-data .gauge-section .middle {
+  width: 90%;
+  height: 30%;
+}
+.container .health-data .gauge-section .middle .gauge {
+  width: 100%;
+  height: 100%;
+  background-color: #d0d326;
+  border-radius: 25px;
 }
 
 /*# sourceMappingURL=style.css.map */

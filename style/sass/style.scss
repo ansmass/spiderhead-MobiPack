@@ -18,7 +18,7 @@ body{
 
      .range-section{
           width: 100%;
-          height: 39vh;
+          height: 40vh;
 
           display: flex;
           flex-direction: column;
@@ -179,6 +179,92 @@ body{
 
                          font-size: 14px;
                          font-weight: 300;
+                    }
+               }
+          }
+     }
+
+     .health-data{
+          width: 100%;
+          height: 10vh;
+
+          display: flex;
+          justify-content: space-between;
+
+          .bpm-section{
+               width: 45%;
+               height: 100%;
+
+               display: flex;
+               align-items: center;
+               flex-direction: column;
+
+               .entitled{
+                    width: 90%;
+                    height: 20%;
+
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: #878787;
+               }
+
+               .informations{
+                    width: 90%;
+                    height: 80%;
+
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .heartbeat{
+                         font-size: 3.5em;
+                         font-weight: 200;
+                    }
+
+                    .icon-bpm{
+                         display: flex;
+                         align-items: center;
+                         flex-direction: column;
+
+                         font-size: 14px;
+                         font-weight: 400;
+                         color: #878787;
+                    }
+               }
+          }
+
+          .gauge-section{
+               width: 45%;
+               height: 100%;
+
+               display: flex;
+               flex-direction: column;
+               justify-content: space-between;
+               align-items: center;
+
+               .top,
+               .bottom{
+                    width: 90%;
+                    height: 20%;
+
+                    display: flex;
+                    justify-content: space-between;
+
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: #878787;
+               }
+
+               .middle{
+                    width: 90%;
+                    height: 30%;
+
+                    .gauge{
+                         width: 100%;
+                         height: 100%;
+
+                         background-color: #d0d326;
+                         border-radius: 25px;
                     }
                }
           }
