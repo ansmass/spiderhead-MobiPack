@@ -30,13 +30,13 @@ body {
   background-color: #1B1B1B;
 }
 .container .range-section .rs-control .rs-path-color {
-  background-color: rgba(208, 211, 38, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 .container .range-section .rs-control .rs-range-color {
-  background-color: #d0d326;
+  background-color: rgb(255, 255, 255);
 }
 .container .range-section .rs-control .rs-range-color::after {
-  background-color: #d0d326;
+  background-color: rgb(255, 255, 255);
 }
 .container .range-section .rs-control .rs-border {
   border: none;
@@ -214,8 +214,8 @@ body {
 .container .health-data .gauge-section .middle .gauge {
   width: 100%;
   height: 100%;
-  background-color: #d0d326;
   border-radius: 25px;
+  transition: all 0.3s ease-in-out;
 }
 .container .prescription {
   width: 100%;
