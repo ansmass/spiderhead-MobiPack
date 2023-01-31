@@ -17,7 +17,7 @@ body {
 }
 .container .range-section {
   width: 100%;
-  height: 40vh;
+  height: 39vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -88,6 +88,67 @@ body {
 }
 .container .range-section__content .lethal .result {
   color: #E9E9E9;
+}
+.container .patient {
+  width: 100%;
+  height: 10vh;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+}
+.container .patient.left {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .patient.left.top {
+  width: 90%;
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .patient.left.top .entitled,
+.container .patient.left.top .number {
+  font-size: 14px;
+  font-weight: 400;
+  color: #878787;
+}
+.container .patient.left.bottom {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.container .patient.left.bottom .name {
+  font-size: 2em;
+  font-weight: 300;
+  text-align: left;
+}
+.container .patient.right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.container .patient.right.top {
+  width: 90%;
+  height: 20%;
+}
+.container .patient.right.bottom {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.container .patient.right.bottom span {
+  margin: 0 1em;
+  font-size: 14px;
+  font-weight: 300;
 }
 
 /*# sourceMappingURL=style.css.map */
