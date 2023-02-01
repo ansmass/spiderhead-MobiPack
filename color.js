@@ -14,10 +14,28 @@ const activeColor = [
      "#C1330F" // activeColor[4]
 ];
 
+// Texts
+const substanceName = [
+     "N-40",
+     "B-15",
+     "G-46",
+     "I-16",
+     "B-6"
+];
+
+const effectName = [
+     `"Luvactin"`,
+     `"Verbaluce"`,
+     `"Laffodil"`,
+     `"Darkenfloxx"`,
+     `"Obedix"`
+]
 
 // application elements
 const gauge = document.getElementById('gauge');
 const range = document.querySelector('.rs-range-color');
+const substance = document.getElementById('substance');
+const effect = document.getElementById('effect');
 
 // Substances
 document.getElementById('blue').addEventListener('click', changeColor);
@@ -37,6 +55,9 @@ function changeColor(c){
 
           gauge.style.background = activeColor[0];
           range.style.background = activeColor[0];
+
+          substance.innerText = substanceName[0];
+          effect.innerText = effectName[0];
      } 
      else if (c.target.id === "yellow") {
           document.getElementById("yellow").style.fill = activeColor[1];
@@ -48,6 +69,9 @@ function changeColor(c){
 
           gauge.style.background = activeColor[1];
           range.style.background = activeColor[1];
+
+          substance.innerText = substanceName[1];
+          effect.innerText = effectName[1];
      } 
      else if (c.target.id === "purple") {
           document.getElementById("purple").style.fill = activeColor[2];
@@ -59,6 +83,9 @@ function changeColor(c){
 
           gauge.style.background = activeColor[2];
           range.style.background = activeColor[2];
+
+          substance.innerText = substanceName[2];
+          effect.innerText = effectName[2];
      } 
      else if (c.target.id === "green") {
           document.getElementById("green").style.fill = activeColor[3];
@@ -70,6 +97,9 @@ function changeColor(c){
 
           gauge.style.background = activeColor[3];
           range.style.background = activeColor[3];
+
+          substance.innerText = substanceName[3];
+          effect.innerText = effectName[3];
      }
      else if (c.target.id === "red") {
           document.getElementById("red").style.fill = activeColor[4];
@@ -81,5 +111,8 @@ function changeColor(c){
 
           gauge.style.background = activeColor[4];
           range.style.background = activeColor[4];
+
+          substance.innerText = substanceName[4];
+          effect.innerText = effectName[4];
      }
 };
