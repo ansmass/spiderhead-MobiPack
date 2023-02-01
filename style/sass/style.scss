@@ -35,19 +35,12 @@ body{
                .rs-path-color{
                     background-color: rgba(255, 255, 255, 0.1);
                }
-               .rs-range-color{
-                    background-color: rgb(255, 255, 255);
-               }
-               .rs-range-color::after{
-                    background-color: rgb(255, 255, 255);
-               }
                .rs-border{
                     border: none;
                }
                .rs-handle{
                     background-color: transparent;
                }
-
 
                // Tooltip
                .rs-tooltip{

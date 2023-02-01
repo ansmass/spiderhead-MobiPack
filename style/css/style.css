@@ -32,12 +32,6 @@ body {
 .container .range-section .rs-control .rs-path-color {
   background-color: rgba(255, 255, 255, 0.1);
 }
-.container .range-section .rs-control .rs-range-color {
-  background-color: rgb(255, 255, 255);
-}
-.container .range-section .rs-control .rs-range-color::after {
-  background-color: rgb(255, 255, 255);
-}
 .container .range-section .rs-control .rs-border {
   border: none;
 }

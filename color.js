@@ -14,8 +14,10 @@ const activeColor = [
      "#C1330F" // activeColor[4]
 ];
 
-// gauge element
+
+// application elements
 const gauge = document.getElementById('gauge');
+const range = document.querySelector('.rs-range-color');
 
 // Substances
 document.getElementById('blue').addEventListener('click', changeColor);
@@ -24,8 +26,8 @@ document.getElementById('purple').addEventListener('click', changeColor);
 document.getElementById('green').addEventListener('click', changeColor);
 document.getElementById('red').addEventListener('click', changeColor);
 
-function changeColor(e){
-     if(e.target.id === "blue"){
+function changeColor(c){
+     if(c.target.id === "blue"){
           document.getElementById("blue").style.fill = activeColor[0];
           
           document.getElementById("yellow").style.fill = currentColor[1];
@@ -34,8 +36,9 @@ function changeColor(e){
           document.getElementById("red").style.fill = currentColor[4];
 
           gauge.style.background = activeColor[0];
+          range.style.background = activeColor[0];
      } 
-     else if (e.target.id === "yellow") {
+     else if (c.target.id === "yellow") {
           document.getElementById("yellow").style.fill = activeColor[1];
           
           document.getElementById("blue").style.fill = currentColor[0];
@@ -44,8 +47,9 @@ function changeColor(e){
           document.getElementById("red").style.fill = currentColor[4];
 
           gauge.style.background = activeColor[1];
+          range.style.background = activeColor[1];
      } 
-     else if (e.target.id === "purple") {
+     else if (c.target.id === "purple") {
           document.getElementById("purple").style.fill = activeColor[2];
           
           document.getElementById("blue").style.fill = currentColor[0];
@@ -54,8 +58,9 @@ function changeColor(e){
           document.getElementById("red").style.fill = currentColor[4];
 
           gauge.style.background = activeColor[2];
+          range.style.background = activeColor[2];
      } 
-     else if (e.target.id === "green") {
+     else if (c.target.id === "green") {
           document.getElementById("green").style.fill = activeColor[3];
           
           document.getElementById("blue").style.fill = currentColor[0];
@@ -64,8 +69,9 @@ function changeColor(e){
           document.getElementById("red").style.fill = currentColor[4];
 
           gauge.style.background = activeColor[3];
+          range.style.background = activeColor[3];
      }
-     else if (e.target.id === "red") {
+     else if (c.target.id === "red") {
           document.getElementById("red").style.fill = activeColor[4];
           
           document.getElementById("blue").style.fill = currentColor[0];
@@ -74,5 +80,6 @@ function changeColor(e){
           document.getElementById("green").style.fill = currentColor[3];
 
           gauge.style.background = activeColor[4];
+          range.style.background = activeColor[4];
      }
 };
